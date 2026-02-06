@@ -53,4 +53,10 @@ It is built with a modern tech stack and focuses on clean UI, proper authenticat
             - Mongoose
             - JWT (JSON Web Tokens)
 
+-> Deployment
+    -> Backend(Render):
+    https://taskflow-2n4q.onrender.com
+
+    -> Frontend(Vercel):
+    https://task-flow-1x4unczl4-rakshitas-projects-a161f520.vercel.app/
 
