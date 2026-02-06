@@ -60,3 +60,29 @@ It is built with a modern tech stack and focuses on clean UI, proper authenticat
     -> Frontend(Vercel):
     https://task-flow-1x4unczl4-rakshitas-projects-a161f520.vercel.app/
 
+-> Backend setup:
+    - git clone https://github.com/rlrakshita123/TaskFlow.git
+    - cd TaskFlow
+    - cd backend
+    - npm install
+
+    -> Create .env file inside backend/
+    PORT=5000
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_secret_key
+
+    -> Start Backend Server: npm start
+    -> Backend will run at: http://localhost:5000
+
+-> Frontend setup
+    - cd frontend
+    - npm install
+
+    -> Start Frontend: npm run dev
+    -> Frontend will run at: http://localhost:5173
+
+
+    
+
+
+
