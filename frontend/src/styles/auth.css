@@ -1,0 +1,80 @@
+.auth-container {
+  min-height: calc(100vh - 140px); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-bg);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--secondary-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-card input {
+  padding: 0.7rem 0.8rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.auth-card input:focus {
+  outline: 2px solid var(--accent);
+}
+
+.auth-card button {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--accent);
+  color: var(--primary-bg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.auth-card button:hover {
+  background-color: var(--accent-hover);
+}
+
+.auth-footer-text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.auth-footer-text a {
+  color: var(--accent);       
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-footer-text a:hover {
+  color: var(--accent);      
+  text-decoration: underline;
+}
+
+.auth-footer-text span {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 500;
+}
