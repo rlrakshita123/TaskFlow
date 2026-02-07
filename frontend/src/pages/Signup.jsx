@@ -10,16 +10,19 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+    setLoading(true);
 
     try {
       await signupUser(name, email, password);
       navigate("/login"); // redirect after signup
     } catch (err) {
       setError(err.message);
+       setLoading(false);
     }
   };
 

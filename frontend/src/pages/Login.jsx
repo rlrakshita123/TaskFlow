@@ -5,6 +5,7 @@ import "../styles/auth.css";
 
 const Login = () => {
   const location = useLocation();
+  const [loading, setLoading] = useState(false);
   const from = location.state?.from || "/dashboard";
 
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+     setLoading(true);
 
     try {
       const data = await loginUser(email, password);
@@ -26,6 +28,7 @@ const Login = () => {
       navigate(from, { replace: true });
     } catch (err) {
       setError(err.message);
+      setLoading(false);
     }
   };
 
@@ -55,7 +58,9 @@ const Login = () => {
             required
           />
 
-          <button type="submit">Login</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Logging in..." : "Login"}
+          </button>
         </form>
 
         <p className="auth-footer-text">
