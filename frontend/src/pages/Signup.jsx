@@ -60,7 +60,9 @@ const Signup = () => {
             required
           />
 
-          <button type="submit">Sign Up</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Signing up..." : "Sign Up"}
+          </button>
         </form>
 
         <p className="auth-footer-text">
